@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Caprasimo&family=Geologica:wght@300;500&family=Inter:wght@600;700;800&family=Oswald:wght@500&family=Roboto:wght@400;500;700;900&family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+  --clr-violet: #5c58c9;
+  --clr-violet-hover:#45429d;
+  --clr-back-body: #191922;
+  --clr-white: #f9f9ff;
+  --clr-white-hover: #bfbfc7;
+  --clr-btn: #292934; 
+  --clr-btn-hover: #212136; 
+  --clr-input: #19192a;
+  --clr-border: #e6e0ef1a;
+  --clr-border-hover: #e2e2e2; 
+  --clr-gray-hover: #5c5959;
+  --clr-gray: #888686;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Geologica', sans-serif;
+}
+
+body {
+  background-color: var(--clr-back-body);
+  color: var(--clr-white);
+}
+
+a {
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--clr-violet);
+}
+
+a:hover {
+  color: var(--clr-violet-hover);
+}
+
+li{
+  list-style: none;
+  font-size: 1.1em;
+}
+
+h2{
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 1.5em;
+  line-height: 1.1;
+}
+
+p{
+  font-size: .9em;
+  color: var(--clr-gray);
+}
+
+span{
+  color: var(--clr-gray);
+}
+
+i{
+  color: var(--clr-violet);
+  font-size: 1.1em; 
+}
+
+i:hover{
+  color: var(--clr-violet-hover);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: .8em;
+  border-radius: 100vh;
+}
+
+input{
+  padding: .5em .8em;
+  border-radius: .5em;
+  outline: none;
+  border: 1px solid transparent;
+  font-size: .9em;
+  background-color: var(--clr-btn-hover);
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+input:hover{
+  border: 1px solid var(--clr-violet);
+}
+
+input:focus{
+  background-color: var(--clr-input);
+  border: 1px solid var(--clr-violet-hover);
+}
+
+select{
+  color: var(--clr-gray);
+  padding: .5em .8em;
+  border-radius: .5em;
+}
+
+:is(select:hover, select:focus){
+  border-color: var(--clr-violet-hover);
+}
+
+option{
+  background-color: var(--clr-back-body);
+  color: var(--clr-gray);
+}
+
+label{
+  font-size: .9em;  
+}
